@@ -277,8 +277,8 @@ function place(x, y, color) {
                     'actionName': 'r/replace:set_pixel',
                     'PixelMessageData': {
                         'coordinate': {
-                            'x': x,
-                            'y': y,
+                            'x': x % 1000,
+                            'y': y % 1000,
                         },
                         'colorIndex': color,
                         'canvasIndex': getCanvas(x, y)
